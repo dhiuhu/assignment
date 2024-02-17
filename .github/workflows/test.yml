@@ -1,18 +1,8 @@
-name: Run Tests
-'on':
-  - push
-  - pull_request
+name: hello-world
+on: push
 jobs:
-  test:
+  my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: |
-          npm install
-        shell: bash
-      - name: Run Jest Tests
-        run: |
-          npm test
-        shell: bash
+      - name: my-step
+        run: echo "Hello!! David Hiuhu - 101509799"
